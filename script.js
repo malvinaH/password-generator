@@ -1,8 +1,7 @@
-// Assignment Code
-// function generatePassword(){
-  // Data 
+
 var generateBtn = document.querySelector("#generate");
 
+// user input for password length
 function getPasswordLength(){
   do {
     var passwordLength = parseInt(prompt("How many characters do you want to use between 8 and 128"));
@@ -11,7 +10,6 @@ function getPasswordLength(){
 }
 
 function generatePassword(){
-    // Data
     var numbers = "1234567890";
     var lowerCaseCharacters = "absdefghijklmnpqrstuvwxyz";
     var upperCaseCharacters = lowerCaseCharacters.toUpperCase();
@@ -21,14 +19,21 @@ function generatePassword(){
 
 
     var passwordLength = getPasswordLength();
-    console.log(passwordLength);
 
     if (confirm("Would you like to use a number?")) choices += numbers;
     if (confirm("Would you like to use a lowercase character?")) choices += lowerCaseCharacters;
     if (confirm("Would you like to use an uppercase character?")) choices += upperCaseCharacters;
     if (confirm("Would you like to use a special character?")) choices += specialCharacter;
-}
 
+    for (var i=0 ; i < passwordLength; i++){
+      var randomIndex = Math.floor(Math.random()* choices.length)
+      var randomCharacter = choices[randomIndex];
+      password += randomCharacter;
+    }
+
+
+    return password
+}
     function writePassword(){
       var password = generatePassword();
       var passwordText = document.querySelector("#password");
