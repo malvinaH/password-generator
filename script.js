@@ -22,8 +22,7 @@ function generatePassword(){
 
     var passwordLength = getPasswordLength();
 
-    // asking for character type to include in the password and put them together
-
+    // asking for at least one character type to include in the password and put them together
     choices = getSelection();
     if (choices === "") {
         do {
