@@ -11,8 +11,8 @@ https://malvinah.github.io/password-generator/
 
 ## Screenshot
 
-![Before generation](./asset/images/Screenshot_password-gen.png.png?raw=true "Password Generator")
-![After generation](./asset/images/Screenshot_password-gen2.png.png?raw=true "Password generator 2")
+![Before generation](./asset/images/Screenshot_password-gen.png?raw=true "Password Generator")
+![After generation](./asset/images/Screenshot_password-gen2.png?raw=true "Password generator 2")
 
 
 ## Licence
